@@ -6,12 +6,12 @@
   "author": "Nick Rom",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^2.0.0",
+    "express": "^4.17.2",
     "lodash": "^4.17.4",
     "request": "^2.3.4",
     "request-promise": "^4.2.0",
-    "dash-button": "^2.0.1",
-    "uuid": "^3.0.1",
-    "dateformat": "^2.0.0"
+    "uuid": "^3.0.1"
   },
   "scripts": {
     "scan": "dash-button scan"
