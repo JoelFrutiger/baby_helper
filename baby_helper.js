@@ -130,7 +130,7 @@ BabyHelper.prototype.logDiaper = function (changeType) {
         var dataBuffer = Buffer.from(json).toString("base64");
         var currentSyncId = 0
         try {
-            currentSyncId = fs.readFileSync(syncIdFile).toString() ?? 0;
+            currentSyncId = fs.readFileSync(syncIdFile).toString();
         } catch(e){
             console.log(e)
         }
@@ -146,7 +146,7 @@ BabyHelper.prototype.logDiaper = function (changeType) {
         console.log("Logged Diaper Change - " + changeType);
         var currentSyncId = 0;
         try {
-            currentSyncId = fs.readFileSync(syncIdFile).toString() ?? 0;
+            currentSyncId = fs.readFileSync(syncIdFile).toString();
         }
         catch(e){
             console.log(e);
